@@ -2,9 +2,8 @@
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
-
+event.preventdefault()
 function makeGrid(event) {
-    event.preventdefault()
 // Your code goes here!
 var height = decument.GetElementById("inputheight").value;
 var width = decument.GetElementById("inputWidth").value;
@@ -22,7 +21,8 @@ for (var i=0; i<width;i++){
 }
 }
 function colorCell(event) {
-
-
-
+    if (event.target.nodename == "TD") {
+        var pickedColor = decument.GetElementById("colorPicker").value;
+        event.target.style.backgroundColor=pickedColor;
+    }
 }
