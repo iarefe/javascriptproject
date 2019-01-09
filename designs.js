@@ -5,9 +5,9 @@
 function makeGrid(event) {
     event.preventDefault();
 // Your code goes here!
-    var height = document.GetElementById("inputHeight").value;
-    var width = document.GetElementById("inputWidth").value;
-    var tableCanvas = document.GetElementById("pixelCanvas");
+    var height = document.getElementById("inputHeight").value;
+    var width = document.getElementById("inputWidth").value;
+    var tableCanvas = document.getElementById("pixelCanvas");
 
     tableCanvas.innerHTML = "";
 
