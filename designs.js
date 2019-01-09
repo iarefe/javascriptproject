@@ -3,7 +3,7 @@
 
 // When size is submitted by the user, call makeGrid()
 function makeGrid(event) {
-    event.preventdefault();
+    event.preventDefault();
 // Your code goes here!
     var height = decument.GetElementById("inputHeight").value;
     var width = decument.GetElementById("inputWidth").value;
