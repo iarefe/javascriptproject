@@ -5,15 +5,15 @@
 function makeGrid(event) {
     event.preventDefault();
 // Your code goes here!
-    var height = document.getElementById("inputHeight").value;
-    var width = document.getElementById("inputWidth").value;
+    var Gridheight = document.getElementById("inputHeight").value;
+    var Gridwidth = document.getElementById("inputWidth").value;
     var tableCanvas = document.getElementById("pixelCanvas");
 
     tableCanvas.innerHTML = "";
 
-    for (var i = 0; i < height; i++) {
+    for (var i = 0; i < Gridheight; i++) {
         var row = document.createElement("tr");
-        for (var j = 0; j < width; j++) {
+        for (var j = 0; j < Gridwidth; j++) {
             var cell = document.createElement("td");
             row.appendChild(cell);
         }
@@ -22,7 +22,7 @@ function makeGrid(event) {
 }
 function colorCell(event) {
     if (event.target.nodeName == "TD") {
-        var pickedColor = document.GetElementById("colorPicker").value;
+        var pickedColor = document.getElementById("colorPicker").value;
         event.target.style.backgroundColor=pickedColor;
     }
 }
