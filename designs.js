@@ -15,9 +15,9 @@ function makeGrid(event) {
         var row = document.createElement("tr");
         for (var j = 0; j < width; j++) {
             var cell = document.createElement("td");
-            row.appendchild(cell);
+            row.appendChild(cell);
         }
-        tableCanvas.appendchild(row);
+        tableCanvas.appendChild(row);
     }
 }
 function colorCell(event) {
