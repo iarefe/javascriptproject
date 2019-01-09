@@ -5,23 +5,23 @@
 function makeGrid(event) {
     event.preventdefault();
 // Your code goes here!
-var height = decument.GetElementById("inputHeight").value;
-var width = decument.GetElementById("inputWidth").value;
-var TableCanvas = decument.GetElementById("pixelCanvas");
+    var height = decument.GetElementById("inputHeight").value;
+    var width = decument.GetElementById("inputWidth").value;
+    var TableCanvas = decument.GetElementById("pixelCanvas");
 
-TableCanvas.innerHTML="";
+    TableCanvas.innerHTML="";
 
-for (var i=0; i<width;i++){
-    var row = decument.createElement("tr");
-    for (var j=0;j<width;j++){
-        var cell = decument.createElement("td");
-        row.appendchild(cell);
-    }
-    TableCanvas.appendchild(row);
+    for (var i=0; i<width;i++){
+        var row = decument.createElement("tr");
+        for (var j=0;j<width;j++){
+            var cell = decument.createElement("td");
+            row.appendchild(cell);
+        }
+        TableCanvas.appendchild(row);
 }
 }
 function colorCell(event) {
-    if (event.target.nodename == "TD") {
+    if (event.target.Nodename == "TD") {
         var pickedColor = decument.GetElementById("colorPicker").value;
         event.target.style.backgroundColor=pickedColor;
     }
