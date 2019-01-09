@@ -9,19 +9,19 @@ function makeGrid(event) {
     var width = decument.GetElementById("inputWidth").value;
     var TableCanvas = decument.GetElementById("pixelCanvas");
 
-    TableCanvas.innerHTML="";
+    TableCanvas.innerHTML = "";
 
-    for (var i=0; i<width;i++){
+    for (var i = 0; i < height; i++) {
         var row = decument.createElement("tr");
-        for (var j=0;j<width;j++){
+        for (var j = 0; j < width; j++) {
             var cell = decument.createElement("td");
             row.appendchild(cell);
         }
         TableCanvas.appendchild(row);
-}
+    }
 }
 function colorCell(event) {
-    if (event.target.Nodename == "TD") {
+    if (event.target.nodeName == "TD") {
         var pickedColor = decument.GetElementById("colorPicker").value;
         event.target.style.backgroundColor=pickedColor;
     }
