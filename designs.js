@@ -5,7 +5,7 @@
 function makeGrid(event) {
     event.preventdefault()
 // Your code goes here!
-var height = decument.GetElementById("inputheight").value;
+var height = decument.GetElementById("inputHeight").value;
 var width = decument.GetElementById("inputWidth").value;
 var TableCanvas = decument.GetElementById("pixelCanvas");
 
