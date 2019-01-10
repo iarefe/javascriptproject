@@ -1,7 +1,4 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
+// this function to creat a Grid
 function makeGrid(event) {
     //This code is to stop the page refresh
     event.preventDefault();
@@ -26,6 +23,6 @@ function colorCell(event) {
     // To select the coloring area accurately
     if (event.target.nodeName == "TD") {
         var pickedColor = document.getElementById("colorPicker").value;
-        event.target.style.backgroundColor=pickedColor;
+            event.target.style.backgroundColor=pickedColor;
     }
 }
